@@ -1,0 +1,10 @@
+/**
+ * Custom App component for Next.js.
+ * This component wraps all pages and is used to:
+ * - Inject global CSS (like Tailwind's base styles and custom fonts).
+ * - Maintain state across page navigations.
+ * - Inject additional data into pages.
+ *
+ * @param {AppProps} { Component, pageProps } - The Component to be rendered and its props.
+ * @returns {JSX.Element} The rendered page component.
+ */

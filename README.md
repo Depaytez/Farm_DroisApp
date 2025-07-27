@@ -20,6 +20,7 @@ Farm DroisApp is envisioned to offer a comprehensive suite of features to suppor
  * **React:** JavaScript library for building user interfaces.
  * **TypeScript:** Superset of JavaScript that adds optional static typing and other features.
  * **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+ * **Pages Router:** Next.js routing system based on the `pages/` directory.
 
 * **Backend:**
  * **Python:** Versatile programming language for data processing, AI/ML, and API development.
@@ -63,32 +64,52 @@ Follow these steps to get your Farm DroisApp development environment up and runn
    venv\Scripts\activate.bat
    # On Windows (PowerShell):
    .\venv\Scripts\Activate.ps1
-   # Then
-   pip install -r requirements.txt
+
+   # Install Python dependencies:
+   pip install fastapi uvicorn
+   pip freeze > requirements.txt
 ```
 
 ### Running the Applications
+
 **Frontend (Web):**
 ```bash
    cd frontend
    npm run dev # or yarn dev
    # The frontend will be accessible at http://localhost:3000.
 ```
+
 **Backend (API):**
 ```bash
    cd backend
-   source venv/bin/activate # Activate your virtual environment
+   source venv/Scripts/activate # Activate your virtual environment (use the correct one for your shell)
    uvicorn app:app --reload
    # The backend API will typically run on http://localhost:8000.
 ```
+### Frontend Development - Customizing Tailwind CSS
+1. **Color Palettes:** 
+   * `primary-green: #00A859`     # Vibrant green
+   * `dark-green: #007B40`        # Darker shade of green
+   * `light-green: #CCF5E0`       # Lighter shade of green
+   * `pure-white: #FFFFFF`        # Pure white
+   * `pure-black: #000000`        # Pure black
+   * `dark-charcoal: #1A1A1A`     # Deep dark color, almost black
+   * `primary-gray-dark: #333333` # Dark gray for text or backgrounds
+   * `gray-medium: #666666`       # Medium gray
+   * `gray-light: #F5F5F5`        # Very light gray for backgrounds/borders
 
+2. **Consistent Font/Styles**
+
+3. **Spacing.**
+ 
 ### Contributing
-We welcome contributions! Please see our ```CONTRIBUTING.md``` (to be created) for more details.
+We welcome contributions! Please see our `CONTRIBUTING.md` (to be created) for more details.
 
 ### License
-This project is licensed under the MIT License - see the ```LICENSE``` file for details.
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 ### Contact
+
 **Philip Depaytez** - Full-Stack Software Engineer, Entrepreneur, Politician, Minister of God.
 **Email:** [depaytez@gmail.com]
 **GitHub:** [https://github.com/Depaytez]
